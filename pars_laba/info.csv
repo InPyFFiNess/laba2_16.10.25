@@ -1,18 +1,40 @@
-all_countries = driver.find_element(By.CLASS_NAME, value='ignore_clickoutside input-1wrIg input-nw_bX input-r-YUx input_withoutPlaceholder-1tzoW input_arrival-PS34V')
-all_countries.click()
-time.sleep(5)
-
-city = driver.find_element(By.CLASS_NAME, value='country-2ylI_ country-2NKat')
-city.click()
-time.sleep(5)
-
-find_button = driver.find_element(By.CLASS_NAME, value='root-1LfbW smallPrimary-3zmwj MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1cy74wo')
-find_button.click()
-time.sleep(5)
-
-url = driver.current_url
-links_list += url
-
-
-
-print(links_list)
+﻿Город,Цена
+Баку,447.32Br
+Екатеринбург,433.89Br
+Санкт-Петербург,237.89Br
+Барнаул,Рейса нет
+Грозный,Рейса нет
+Казань,1 102.20Br
+Калининград,381.75Br
+Кемерово,Рейса нет
+Красноярск,Рейса нет
+Махачлкала,Рейса нет
+Минеральные Воды,1 497.44Br
+Москва,193.75Br
+Новокузнецк,Рейса нет
+Ноябрьск,Рейса нет
+Омск,691.93Br
+Самара,1 644.23Br
+Сочи,791.09Br
+Сургут,619.63Br
+Томск,765.98Br
+Тюмень,707.60Br
+Уфа,999.75Br
+Челябинкс,999.75Br
+Ереван,1 039.88Br
+Гомель,Рейса нет
+Кутаиси,488.74Br
+Батуми,Рейса нет
+Тбилиси,Рейса нет
+Дели,Рейса нет
+Астана,1 845.27Br
+Алматы,Рейса нет
+Санья,Рейса нет
+Урумчи,2 140.60Br
+Бишкек,Рейса нет
+Дубай,1 815.34Br
+Паттайя,1 815.34Br
+Туркменбаши,Рейса нет
+Стамбул,1 420.88Br
+Ташкент,Рейса нет
+Хамбантота,Рейса нет
