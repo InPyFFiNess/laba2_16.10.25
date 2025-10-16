@@ -1,0 +1,43 @@
+from_county = driver.find_element(By.CSS_SELECTOR, '#root > div.inner-1mUUA.inner__inner-377JM > div > div > form > div:nth-child(1) > div.segments-2_MOj.segments-3Ho24.alternative-2JxWI > div > div > div > div:nth-child(1) > div > div > input')
+from_county.click()
+from_county.send_keys('Минск')
+from_county.send_keys(Keys.RETURN)
+time.sleep(5)
+
+to_country = driver.find_element(By.CSS_SELECTOR, value='#root > div.inner-1mUUA.inner__inner-377JM > div > div > form > div:nth-child(1) > div.segments-2_MOj.segments-3Ho24.alternative-2JxWI > div > div > div > div.cell-iwglb.cell-1PZIX.cell_location-2RvhJ.cell_location-1cHks.cell_location_arrival-1bMPd > div > input')
+to_country.click()
+time.sleep(5)
+
+city = driver.find_element(By.CSS_SELECTOR, value='body > div:nth-child(23) > div.MuiDialog-container.MuiDialog-scrollPaper > div > div > div.countries-KJdkx.countries-1BuHh > div.countries__list-YqtHx.countries__list-2AqlG')
+city.click()
+time.sleep(5)
+
+find_button = driver.find_element(By.CLASS_NAME, value='root-1LfbW smallPrimary-3zmwj MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1cy74wo')
+find_button.click()
+time.sleep(5)
+
+url = driver.current_url
+links_list += url
+
+
+
+print(links_list)
+
+
+
+
+
+{
+from_county = driver.find_element(By.CSS_SELECTOR, '#root > div.inner-1mUUA.inner__inner-377JM > div > div > form > div:nth-child(1) > div.segments-2_MOj.segments-3Ho24.alternative-2JxWI > div > div > div > div:nth-child(1) > div > div > input')
+from_county.click()
+from_county.send_keys('Минск')
+driver.find_element(By.CLASS_NAME, value='label-D365g').click()
+
+
+
+
+from_county = driver.find_element(By.CSS_SELECTOR, '#root > div.inner-1mUUA.inner__inner-377JM > div > div > form > div:nth-child(1) > div.segments-2_MOj.segments-3Ho24.alternative-2JxWI > div > div > div > div:nth-child(1) > div > div > input')
+from_county.click()
+from_county.send_keys('Минск')
+driver.find_element(By.CLASS_NAME, value='label-D365g').click()
+}

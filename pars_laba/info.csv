@@ -1,0 +1,18 @@
+all_countries = driver.find_element(By.CLASS_NAME, value='ignore_clickoutside input-1wrIg input-nw_bX input-r-YUx input_withoutPlaceholder-1tzoW input_arrival-PS34V')
+all_countries.click()
+time.sleep(5)
+
+city = driver.find_element(By.CLASS_NAME, value='country-2ylI_ country-2NKat')
+city.click()
+time.sleep(5)
+
+find_button = driver.find_element(By.CLASS_NAME, value='root-1LfbW smallPrimary-3zmwj MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-disableElevation MuiButtonBase-root  css-1cy74wo')
+find_button.click()
+time.sleep(5)
+
+url = driver.current_url
+links_list += url
+
+
+
+print(links_list)
